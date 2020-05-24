@@ -1,0 +1,75 @@
+<head>
+    <link rel="stylesheet" href="assets/semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/semantic.min.js"></script>
+    <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
+    <script src="assets/increasenumber.js"></script>
+    <script src="index.js"></script>
+    
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="bg-bubbles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+    </div>
+
+    <div style="margin: 10px;">
+        <h2 class="ui center aligned icon header">
+            <i class="circular newspaper outline icon"></i>
+            <span style="color: #fbf4f4;">Dashboard</span>
+        </h2>
+        
+        <div class="ui equal width grid">
+            <div class="column">
+                <div class="ui segment alignAll">
+                    <div class="ui statistic">
+                        <div class="value">
+                            <span id="tempValue">0</span>
+                            <span> °C</span>
+                        </div>
+                        <div class="label">
+                            Temperatura
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment alignAll">
+                    <div class="ui statistic">
+                        <div class="value">
+                            <div class="progressBar" id="progressBar"></div>
+                        </div>
+                        <div class="label" style="margin-top: 5px;">
+                            Luminosidade
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment alignAll">
+                    <div class="ui statistic">
+                        <div class="value" id="umidValue">
+                            0
+                        </div>
+                        <div class="label">
+                            Umidade
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
