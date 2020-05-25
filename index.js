@@ -16,8 +16,7 @@ $( document ).ready(function() {
         // from: {color: '#FFEA82'},
         // to: {color: '#ED6A5A'},
         from: {color: '#717070'},
-        to: {color: '#ED6A5A'},
-        // Set default step function for all animate calls
+        to: {color: '#F5B985'},
         step: (state, bar) => {
           bar.path.setAttribute('stroke', state.color);
           var value = Math.round(bar.value() * 100);
@@ -41,19 +40,33 @@ $( document ).ready(function() {
         from: +$('#tempValue').html(),
         to: 30,
         speed: 2000,
-        refreshInterval: 60,
+        refreshInterval: 50,
         onComplete: function(value) {
-            console.debug(this);
+          var segment = $(this).parent().parent().parent(); // Get the temp segment (card)
+          if(value > 25){
+            $(segment).addClass('high-color-temp');
+            $(segment).removeClass('low-color-temp');
+          }else{
+            $(segment).removeClass('high-color-temp');
+            $(segment).addClass('low-color-temp');
+          }
         }
     });
 
     $('#umidValue').countTo({
-        from: +$('#tempValue').html(),
+        from: +$('#umidValue').html(),
         to: 100,
         speed: 2000,
         refreshInterval: 60,
         onComplete: function(value) {
-            console.debug(this);
+          var segment = $(this).parent().parent().parent(); // Get the temp segment (card)
+          if(value >= 50){
+            $(segment).addClass('high-color-umid');
+            $(segment).removeClass('low-color-umid');
+          }else{
+            $(segment).removeClass('high-color-umid');
+            $(segment).addClass('low-color-umid');
+          }
         }
     });
 

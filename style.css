@@ -39,6 +39,32 @@ body{
     overflow: hidden;
   }
   
+  .high-color-temp{
+    -webkit-animation: color-temp-high 2s ease-in;
+    animation: color-temp-high 2s ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .low-color-temp{
+    -webkit-animation: color-temp-low 2s ease-in;
+    animation: color-temp-low 2s ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .high-color-umid{
+    -webkit-animation: color-umid-high 2s ease-in;
+    animation: color-umid-high 2s ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .low-color-umid{
+    -webkit-animation: color-umid-low 2s ease-in;
+    animation: color-umid-low 2s ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  color-umid-high
+
   .bg-bubbles {
     position: absolute;
     top: 0;
@@ -149,4 +175,39 @@ body{
                 transform: translateY(-1500px) rotate(600deg);
     }
   }
-  
+
+  @keyframes color-temp-high {
+    from {
+      border-bottom: 6px solid #2BEAD0;
+    }
+    to {
+      border-bottom: 6px solid #F58C08;
+    }
+  }
+
+  @keyframes color-temp-low {
+    from {
+      border-bottom: 6px solid #F58C08;
+    }
+    to {
+      border-bottom: 6px solid #2BEAD0;
+    }
+  }
+
+  @keyframes color-umid-high {
+    from {
+      border-bottom: 6px solid #CECECE;
+    }
+    to {
+      border-bottom: 6px solid #2BEAD0;
+    }
+  }
+
+  @keyframes color-umid-low {
+    from {
+      border-bottom: 6px solid #2BEAD0;
+    }
+    to {
+      border-bottom: 6px solid #CECECE;
+    }
+  }
