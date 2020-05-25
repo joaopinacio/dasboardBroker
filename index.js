@@ -13,7 +13,9 @@ $( document ).ready(function() {
           value: '',
           alignToBottom: false
         },
-        from: {color: '#FFEA82'},
+        // from: {color: '#FFEA82'},
+        // to: {color: '#ED6A5A'},
+        from: {color: '#717070'},
         to: {color: '#ED6A5A'},
         // Set default step function for all animate calls
         step: (state, bar) => {
@@ -30,14 +32,14 @@ $( document ).ready(function() {
     });
     bar.text.style.fontFamily = '"Lato", Helvetica Neue, Arial, Helvetica, sans-serif';
     bar.text.style.fontSize = '1.5rem';
-    bar.text.style.fontWeight = '400';
+    bar.text.style.fontWeight = '1000';
     bar.text.style.color = '#1b1c1d';
     
     bar.animate(1.0);  // Number from 0.0 to 1.0
 
     $('#tempValue').countTo({
         from: +$('#tempValue').html(),
-        to: 100,
+        to: 30,
         speed: 2000,
         refreshInterval: 60,
         onComplete: function(value) {
