@@ -27,6 +27,30 @@ body{
     top: 0% !important;
 }
 
+.high-color-temp{
+  -webkit-animation: color-temp-high 1.5s ease-in;
+  animation: color-temp-high 1.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.low-color-temp{
+  -webkit-animation: color-temp-low 1.5s ease-in;
+  animation: color-temp-low 1.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.high-color-umid{
+  -webkit-animation: color-umid-high 1.5s ease-in;
+  animation: color-umid-high 1.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.low-color-umid{
+  -webkit-animation: color-umid-low 1.5s ease-in;
+  animation: color-umid-low 1.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
 .wrapper {
     z-index: -1;
     background: #50a3a2;
@@ -38,32 +62,6 @@ body{
     height: 100%;
     overflow: hidden;
   }
-  
-  .high-color-temp{
-    -webkit-animation: color-temp-high 2s ease-in;
-    animation: color-temp-high 2s ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  .low-color-temp{
-    -webkit-animation: color-temp-low 2s ease-in;
-    animation: color-temp-low 2s ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  .high-color-umid{
-    -webkit-animation: color-umid-high 2s ease-in;
-    animation: color-umid-high 2s ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  .low-color-umid{
-    -webkit-animation: color-umid-low 2s ease-in;
-    animation: color-umid-low 2s ease-in;
-    animation-fill-mode: forwards;
-  }
-
-  color-umid-high
 
   .bg-bubbles {
     position: absolute;
