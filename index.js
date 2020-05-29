@@ -84,27 +84,27 @@ $( document ).ready(function() {
         onComplete: function(value) {}
     });
 
+    $('#togglePresence').click(function (e){
+      $('#togglePresence').parent().parent().toggleClass('on');
+    });
+
     $('#toggleDoor').click(function (e){
       $('#toggleDoor').parent().parent().toggleClass('on');
     });
 
     $('#toggleAir').click(function (e){
-      $('#toggleAir').parent().parent().toggleClass('on');
+      $('#toggleAir').parent().parent().parent().parent().toggleClass('on');
     });
     
     $('#toggleLum').click(function (e){
-      $('#toggleLum').parent().parent().toggleClass('on');
+      $('#toggleLum').parent().parent().parent().parent().toggleClass('on');
     });
 
     $('#toggleMult').click(function (e){
-      $('#toggleMult').parent().parent().toggleClass('on');
+      $('#toggleMult').parent().parent().parent().parent().toggleClass('on');
     });
 
     $('#toggleDoorr').click(function (e){
-      $('#toggleDoorr').parent().parent().toggleClass('on');
-    });
-
-    $('#togglePresence').click(function (e){
-      $('#togglePresence').parent().parent().toggleClass('on');
+      $('#toggleDoorr').parent().parent().parent().parent().toggleClass('on');
     });
 });

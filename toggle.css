@@ -58,9 +58,13 @@
     width: 10px;
     background-color: #fff;
 }
-/* .on {
-    background-color: #6fc57c;
-} */
+.back{
+    background-color: #ff9295 !important;
+    transition: background-color 0.8s ease-in-out;
+}
+.on {
+    background-color: #6fc57c !important;
+}
 .on .toggle:before {
     color: #fff
 }
