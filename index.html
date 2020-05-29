@@ -1,6 +1,7 @@
 <head>
     <link rel="stylesheet" href="assets/semantic.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle.css">
     <script src="assets/jquery.min.js"></script>
     <script src="assets/semantic.min.js"></script>
     <script src="assets/progressbar.min.js"></script>
@@ -71,12 +72,112 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="equal width row"> Container onde irá ficar os botoes
+            <div class="equal width row">
                 <div class="column">
-                    <div class="ui segment alignAll" style="border-radius: 10px;">
+                    <div class="ui segment alignAll" style="height: 100%;border-radius: 10px;">
+                        <div class="ui statistic" style="margin: 7px auto !important;">
+                            <div class="value">
+                                <div class="toggle">
+                                    <input type="checkbox" id="togglePresence" />
+                                    <label for="togglePresence"></label>
+                                </div>
+                            </div>
+                            <div class="label" style="top:70%;transform: translate3d(2%, 368%, 0);">
+                                Presença
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> -->
+                <div class="column">
+                    <div class="ui segment alignAll" style="height: 100%;border-radius: 10px;">
+                        <div class="ui statistic" style="margin: 7px auto !important;">
+                            <div class="font-text value">
+                                <span id="distValue">0</span>
+                            </div>
+                            <div class="label">
+                                Distância
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui segment alignAll" style="height: 100%;border-radius: 10px;">
+                        <div class="ui statistic" style="margin: 7px auto !important;">
+                            <div class="value">
+                                <div class="toggle">
+                                    <input type="checkbox" id="toggleDoor" />
+                                    <label for="toggleDoor"></label>
+                                </div>
+                            </div>
+                            <div class="label" style="top:70%;transform: translate3d(2%, 368%, 0);">
+                                Porta
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="equal width row">
+                <div class="column" style="height: 119px !important;">
+                    <div class="ui segment alignAll" style="height: 100%;border-radius: 10px;">
+                        <div class="ui statistic" style="margin: 7px auto !important;">
+                            <div class="value">
+                                <div class="toggle">
+                                    <input type="checkbox" id="toggleAir" />
+                                    <label for="toggleAir"></label>
+                                </div>
+                            </div>
+                            <div class="label" style="top:70%;transform: translate3d(2%, 368%, 0);">
+                                Ar Condicionado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" style="height: 119px !important;">
+                    <div class="ui segment alignAll" style="height: 100%;border-radius: 10px;">
+                        <div class="ui statistic" style="margin: 7px auto !important;">
+                            <div class="value">
+                                <div class="toggle">
+                                    <input type="checkbox" id="toggleLum" />
+                                    <label for="toggleLum"></label>
+                                </div>
+                            </div>
+                            <div class="label" style="top:70%;transform: translate3d(2%, 368%, 0);">
+                                Luminosidade
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui segment alignAll" style="height: 100%;border-radius: 10px;">
+                        <div class="ui statistic" style="margin: 7px auto !important;">
+                            <div class="value">
+                                <div class="toggle">
+                                    <input type="checkbox" id="toggleMult" />
+                                    <label for="toggleMult"></label>
+                                </div>
+                            </div>
+                            <div class="label" style="top:70%;transform: translate3d(2%, 368%, 0);">
+                                Multimidia
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui segment alignAll" style="height: 100%;border-radius: 10px;">
+                        <div class="ui statistic" style="margin: 7px auto !important;">
+                            <div class="value">
+                                <div class="toggle">
+                                    <input type="checkbox" id="toggleDoorr" />
+                                    <label for="toggleDoorr"></label>
+                                </div>
+                            </div>
+                            <div class="label" style="top:70%;transform: translate3d(2%, 368%, 0);">
+                                Porta
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
