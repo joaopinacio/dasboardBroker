@@ -85,11 +85,15 @@ $( document ).ready(function() {
     });
 
     $('#togglePresence').click(function (e){
-      $('#togglePresence').parent().parent().toggleClass('on');
+      e.preventDefault();
+      // $("#togglePresence").prop("checked", true); // Turn the check on
+      // $('#togglePresence').parent().parent().toggleClass('on');
     });
 
-    $('#toggleDoor').click(function (e){
-      $('#toggleDoor').parent().parent().toggleClass('on');
+    $('#toggleDoorView').click(function (e){
+      e.preventDefault();
+      // $("#toggleDoorView").prop("checked", true); // Turn the check on
+      // $('#toggleDoorView').parent().parent().toggleClass('on');
     });
 
     $('#toggleAir').click(function (e){
@@ -104,7 +108,7 @@ $( document ).ready(function() {
       $('#toggleMult').parent().parent().parent().parent().toggleClass('on');
     });
 
-    $('#toggleDoorr').click(function (e){
-      $('#toggleDoorr').parent().parent().parent().parent().toggleClass('on');
+    $('#toggleDoor').click(function (e){
+      $('#toggleDoor').parent().parent().parent().parent().toggleClass('on');
     });
 });
