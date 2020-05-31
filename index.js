@@ -56,7 +56,7 @@ $( document ).ready(function() {
         to: {color: '#F5B985'},
         step: (state, bar) => {
           bar.path.setAttribute('stroke', state.color);
-          var value = Math.round(bar.value() * 100);
+          var value = Math.round(bar.value() * 1000);
           if (value === 0) {
             bar.setText('');
           } else {
@@ -191,7 +191,7 @@ function getAllValues(){
   });
 
   lumViewValue.on('value', function(snapshot) {
-    bar.animate((+snapshot.val()/100));
+    bar.animate((+snapshot.val()/1000));
   });
 
   umidViewValue.on('value', function(snapshot) {
@@ -385,15 +385,14 @@ function getRoute() {
   $.getJSON('https://mqtt.ronaldmiranda.com.br/sala/temperatura', function(json) {
     console.log(json);
   });
-
-        // changeTempValue(value);
-        // changeLumBar(value);
-        // changeUmidValue(value);
-        // changePresStatus(value);
-        // changeDistValue(value);
-        // changeDoorViewStatus(value);
-        // changeAirButton(value);
-        // changeLumButton(value);
-        // changeMultButton(value);
-        // changeDoorButton(value);
+  // changeTempValue(value);
+  // changeLumBar(value);
+  // changeUmidValue(value);
+  // changePresStatus(value);
+  // changeDistValue(value);
+  // changeDoorViewStatus(value);
+  // changeAirButton(value);
+  // changeLumButton(value);
+  // changeMultButton(value);
+  // changeDoorButton(value);
 }
