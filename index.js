@@ -382,18 +382,10 @@ function changeDoorButton(value) {
 }
 
 function getRoute() {
-  var filter = {
-    key: 'teste'
-  };
+  $.getJSON('https://mqtt.ronaldmiranda.com.br/sala/temperatura', function(json) {
+    console.log(json);
+  });
 
-  $.ajax({
-      url: "https://mqtt.ronaldmiranda.com.br/method/getSearch.php",
-      type: 'GET',
-      data: filter,
-      dataType: 'json',
-      async: false,
-      success: function (data, textStatus, jqXHR) {
-        console.log(data);
         // changeTempValue(value);
         // changeLumBar(value);
         // changeUmidValue(value);
@@ -404,9 +396,4 @@ function getRoute() {
         // changeLumButton(value);
         // changeMultButton(value);
         // changeDoorButton(value);
-      },
-      error: function (jqXHR, textStatus, errorThrown) {
-          console.log(jqXHR);
-      }
-  });
 }
