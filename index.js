@@ -115,10 +115,10 @@ $( document ).ready(function() {
       });
 
       if($('#toggleAir').parent().parent().parent().parent().hasClass('on')){
-        airValue.set(0).then().catch();
+        // airValue.set(0).then().catch();
       $('#toggleAir').parent().parent().parent().parent().removeClass('on');
       }else{
-        airValue.set(1).then().catch();
+        // airValue.set(1).then().catch();
         $('#toggleAir').parent().parent().parent().parent().addClass('on');
       }
 
@@ -144,20 +144,20 @@ $( document ).ready(function() {
       });
 
       if($('#toggleLum').parent().parent().parent().parent().hasClass('on')){
-        lumValue.set(0).then().catch();
+        // lumValue.set(0).then().catch();
         $('#toggleLum').parent().parent().parent().parent().removeClass('on');
       }else{
-        lumValue.set(1).then().catch();
+        // lumValue.set(1).then().catch();
         $('#toggleLum').parent().parent().parent().parent().addClass('on');
       }
     });
 
     $('#toggleMult').click(function (e){
       if($('#toggleMult').parent().parent().parent().parent().hasClass('on')){
-        multValue.set(0).then().catch();
+        // multValue.set(0).then().catch();
         $('#toggleMult').parent().parent().parent().parent().removeClass('on');
       }else{
-        multValue.set(1).then().catch();
+        // multValue.set(1).then().catch();
         $('#toggleMult').parent().parent().parent().parent().addClass('on');
       }
 
@@ -182,10 +182,10 @@ $( document ).ready(function() {
 
     $('#toggleDoor').click(function (e){
       if($('#toggleDoor').parent().parent().parent().parent().hasClass('on')){
-        doorValue.set(0).then().catch();
+        // doorValue.set(0).then().catch();
         $('#toggleDoor').parent().parent().parent().parent().removeClass('on');
       }else{
-        doorValue.set(1).then().catch();
+        // doorValue.set(1).then().catch();
         $('#toggleDoor').parent().parent().parent().parent().addClass('on');
       }
 
