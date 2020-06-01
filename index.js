@@ -105,7 +105,6 @@ $( document ).ready(function() {
           type: 'POST',
           data: filter,
           dataType: 'json',
-          async: false,
           success: function (data, textStatus, jqXHR) {
             console.log(data);
           },
@@ -134,7 +133,6 @@ $( document ).ready(function() {
           type: 'POST',
           data: filter,
           dataType: 'json',
-          async: false,
           success: function (data, textStatus, jqXHR) {
             console.log(data);
           },
@@ -170,7 +168,6 @@ $( document ).ready(function() {
           type: 'POST',
           data: filter,
           dataType: 'json',
-          async: false,
           success: function (data, textStatus, jqXHR) {
             console.log(data);
           },
@@ -198,7 +195,6 @@ $( document ).ready(function() {
           type: 'POST',
           data: filter,
           dataType: 'json',
-          async: false,
           success: function (data, textStatus, jqXHR) {
             console.log(data);
           },
